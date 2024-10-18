@@ -37,7 +37,19 @@ def ex8(x1 = None, x2 = None, x3 = None):
     if x3 is None:
         x3 = x1
     if x1 is None:
-        print(-1)
+        return -1
     else:
-        return
+        return x1*x2*x3
 
+def ex9(ch,ca1,ca2,debut=0,fin=None):
+    if fin is None:
+        fin = len(ch)
+    result = ""
+    for i in range(debut,fin):
+        if ch[i] == ca1:
+            result += ca2
+        else:
+            result += ch[i]
+    return result
+
+print(ex9("Salut, j'aime les chips"," ", "*"))
