@@ -24,12 +24,20 @@ def ex5(li):
         if li[i] > l: l = li[i]
     return l
 
-#flemme
-#def ex6():
+def ex6(nb):
+    liste = {1: 'Janvier', 2: 'Février', 3: 'Mars', 4: 'Avril', 5: 'Mai', 6: 'Juin', 7: 'Juillet', 8: 'Août', 9: 'Septembre', 10: 'Octobre', 11: 'Novembre', 12: 'Décembre'}
+    return liste[nb]
 
-#ex8 aussi
-def ex7(i1 = None, i2 = 10, i3 = 10):
+def ex7(x1 = 10, x2 =10, x3 = 10):
+    return x1 * x2 * x3
 
-    return i1*i2*i3
+def ex8(x1 = None, x2 = None, x3 = None):
+    if x2 is None:
+        x2 = x1
+    if x3 is None:
+        x3 = x1
+    if x1 is None:
+        print(-1)
+    else:
+        return
 
-print(ex7(5.2, 3))
