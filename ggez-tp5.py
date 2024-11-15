@@ -27,3 +27,19 @@ def ex5():
     for k in range(0, len(d.values())):
         nd[list(d.values())[k]] = list(d.keys())[k]
     return nd
+
+def count_car(ch, c):
+    return ch.count(c)
+
+def ordre_frequence(chaine):
+    frequence = {}
+    for char in chaine:
+        if char != ' ':  # On ignore les espaces
+            frequence[char] = frequence.get(char, 0) + 1
+    return sorted(frequence.items(), key=lambda x: x[1], reverse=True)
+
+# Fonction pour afficher la liste triée par ordre décroissant de fréquences
+def ex6(chaine):
+    frequence_triee = ordre_frequence(chaine)
+    for char, count in frequence_triee:
+        print(f"{char} est apparue {count} fois.")
