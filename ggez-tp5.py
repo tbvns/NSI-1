@@ -18,7 +18,6 @@ def ex2():
         if int(i) == somme:
             result.append(i)
     return result
-print(ex2())
 
 def ex3():
     a ="abcdefghijklmnopqrstuvwxyz"
