@@ -8,4 +8,7 @@ def ex3():
             else:
                 found = False
 
-ex3()
+def ex4():
+    while True:
+        chaine = input("Chaîne : ")
+        if len(chaine) > 2 and chaine[2] == "$" and chaine.replace("$", "").isdigit(): break
